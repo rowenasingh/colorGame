@@ -29,11 +29,11 @@ var easyWinNum;
 
 function winningNumber() {
 	if (hard.className === "invert") {
-		console.log(hardWinNum);
+		// console.log(hardWinNum);
 		displayRGB.innerHTML = squares[hardWinNum].style.background;
 	}
 	if (easy.className === "invert") {
-		console.log(easyWinNum);
+		// console.log(easyWinNum);
 		displayRGB.innerHTML = squares[easyWinNum].style.background;
 	}
 }
@@ -121,7 +121,7 @@ function hardMode() {
 
 		var rgb = "rgb(" + r + ", " + g + ", " + b + ")";
 		squares[i].style.background = rgb;
-		console.log(rgb);
+		// console.log(rgb);
 	}
 	winningNumber();
 }
@@ -141,7 +141,7 @@ function easyMode() {
 
 		var rgb = "rgb(" + r + ", " + g + ", " + b + ")";
 		squares[i].style.background = rgb;
-		console.log(rgb);
+		// console.log(rgb);
 	}
 	winningNumber();
 }
